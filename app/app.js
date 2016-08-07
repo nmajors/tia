@@ -4,9 +4,13 @@ import uiRouter from 'angular-ui-router';
 import firebase from 'firebase';
 import angularFire from 'angularfire';
 
+import tia from './modules/tia';
+
 let App = angular.module('app', [
   'ui.router',
-  'firebase'
+  'firebase',
+
+  'nms.tia'
 ]);
 
 function config($urlRouterProvider) {
